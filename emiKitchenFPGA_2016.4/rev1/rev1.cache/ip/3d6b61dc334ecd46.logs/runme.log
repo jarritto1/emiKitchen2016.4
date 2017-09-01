@@ -1,0 +1,453 @@
+
+*** Running vivado
+    with args -log system_multiChannelPWM_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_multiChannelPWM_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source system_multiChannelPWM_0_0.tcl -notrace
+Command: synth_design -top system_multiChannelPWM_0_0 -part xc7a35ticsg324-1L -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10532 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 297.422 ; gain = 87.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_multiChannelPWM_0_0' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ip/system_multiChannelPWM_0_0/synth/system_multiChannelPWM_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'multiChannelPWM_v1_0' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/3cf7/hdl/multiChannelPWM_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'multiChannelPWM_v1_0_S00_AXI' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/3cf7/hdl/multiChannelPWM_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/3cf7/hdl/multiChannelPWM_v1_0_S00_AXI.v:223]
+INFO: [Synth 8-226] default block is never used [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/3cf7/hdl/multiChannelPWM_v1_0_S00_AXI.v:364]
+INFO: [Synth 8-638] synthesizing module 'multiChannelPWM' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/3cf7/src/multiChannelPWM.v:23]
+INFO: [Synth 8-638] synthesizing module 'pwmTop' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/3cf7/src/pwmTop.v:23]
+	Parameter CLOCK_RATE bound to: 83333333 - type: integer 
+	Parameter RESET bound to: 3'b000 
+	Parameter START bound to: 3'b001 
+	Parameter WAIT bound to: 3'b010 
+	Parameter COUNT_CYCLE bound to: 3'b011 
+	Parameter SEC_COUNT bound to: 3'b100 
+INFO: [Synth 8-638] synthesizing module 'pwm' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/3cf7/src/pwm.v:23]
+	Parameter RESET bound to: 3'b000 
+	Parameter ON bound to: 3'b001 
+	Parameter OFF bound to: 3'b010 
+INFO: [Synth 8-256] done synthesizing module 'pwm' (1#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/3cf7/src/pwm.v:23]
+INFO: [Synth 8-256] done synthesizing module 'pwmTop' (2#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/3cf7/src/pwmTop.v:23]
+INFO: [Synth 8-256] done synthesizing module 'multiChannelPWM' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/3cf7/src/multiChannelPWM.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'ledEnable' does not match port width (8) of module 'multiChannelPWM' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/3cf7/hdl/multiChannelPWM_v1_0_S00_AXI.v:396]
+INFO: [Synth 8-256] done synthesizing module 'multiChannelPWM_v1_0_S00_AXI' (4#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/3cf7/hdl/multiChannelPWM_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'multiChannelPWM_v1_0' (5#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/3cf7/hdl/multiChannelPWM_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'system_multiChannelPWM_0_0' (6#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ip/system_multiChannelPWM_0_0/synth/system_multiChannelPWM_0_0.v:57]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[31]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[30]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[29]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[28]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[27]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[26]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[25]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[24]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[23]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[22]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[21]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[20]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[19]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[18]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[17]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[16]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[15]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[14]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[13]
+WARNING: [Synth 8-3331] design pwmTop has unconnected port secondTimeout[12]
+WARNING: [Synth 8-3331] design multiChannelPWM_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design multiChannelPWM_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design multiChannelPWM_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design multiChannelPWM_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design multiChannelPWM_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design multiChannelPWM_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 335.875 ; gain = 126.168
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 335.875 ; gain = 126.168
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 620.102 ; gain = 1.223
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 620.102 ; gain = 410.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 620.102 ; gain = 410.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 620.102 ; gain = 410.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'pwmTop'
+INFO: [Synth 8-5545] ROM "nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "nextPWMCount" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   RESET |                              000 |                              000
+                   START |                              001 |                              001
+                    WAIT |                              010 |                              010
+             COUNT_CYCLE |                              011 |                              011
+               SEC_COUNT |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'pwmTop'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 620.102 ; gain = 410.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 32    
+	   3 Input     32 Bit       Adders := 8     
+	   2 Input     12 Bit       Adders := 8     
++---Registers : 
+	               32 Bit    Registers := 37    
+	               12 Bit    Registers := 8     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 21    
+	   5 Input     32 Bit        Muxes := 16    
+	   2 Input     32 Bit        Muxes := 4     
+	   5 Input     12 Bit        Muxes := 8     
+	   7 Input      3 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 52    
+	   5 Input      1 Bit        Muxes := 40    
+	   3 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module pwmTop 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 2     
+	   5 Input     12 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module multiChannelPWM_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "pwm0/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm0/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm1/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm1/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm2/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm2/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm3/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm3/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm4/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm4/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm5/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm5/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm6/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm6/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm7/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pwm7/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm0/pwm_/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm1/pwm_/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm2/pwm_/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm3/pwm_/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm4/pwm_/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm5/pwm_/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm6/pwm_/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm7/pwm_/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm0/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm0/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm1/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm1/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm2/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm2/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm3/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm3/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm4/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm4/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm5/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm5/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm6/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm6/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm7/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "inst/multiChannelPWM_v1_0_S00_AXI_inst/pwm8channel/pwm7/nextState" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design system_multiChannelPWM_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design system_multiChannelPWM_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design system_multiChannelPWM_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design system_multiChannelPWM_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design system_multiChannelPWM_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design system_multiChannelPWM_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'inst/multiChannelPWM_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/multiChannelPWM_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/multiChannelPWM_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/multiChannelPWM_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/multiChannelPWM_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/multiChannelPWM_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/multiChannelPWM_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module system_multiChannelPWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/multiChannelPWM_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module system_multiChannelPWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/multiChannelPWM_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module system_multiChannelPWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/multiChannelPWM_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module system_multiChannelPWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/multiChannelPWM_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module system_multiChannelPWM_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/multiChannelPWM_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module system_multiChannelPWM_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:42 . Memory (MB): peak = 620.102 ; gain = 410.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:56 . Memory (MB): peak = 620.102 ; gain = 410.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:57 . Memory (MB): peak = 620.102 ; gain = 410.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:58 . Memory (MB): peak = 652.215 ; gain = 442.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:58 . Memory (MB): peak = 652.215 ; gain = 442.508
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:58 . Memory (MB): peak = 652.215 ; gain = 442.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 652.215 ; gain = 442.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 652.215 ; gain = 442.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 652.215 ; gain = 442.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 652.215 ; gain = 442.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   344|
+|2     |LUT1   |  1081|
+|3     |LUT2   |   297|
+|4     |LUT3   |   675|
+|5     |LUT4   |   540|
+|6     |LUT5   |    42|
+|7     |LUT6   |   289|
+|8     |FDRE   |  1329|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------------------+-----------------------------+------+
+|      |Instance                              |Module                       |Cells |
++------+--------------------------------------+-----------------------------+------+
+|1     |top                                   |                             |  4597|
+|2     |  inst                                |multiChannelPWM_v1_0         |  4597|
+|3     |    multiChannelPWM_v1_0_S00_AXI_inst |multiChannelPWM_v1_0_S00_AXI |  4597|
+|4     |      pwm8channel                     |multiChannelPWM              |  4369|
+|5     |        pwm0                          |pwmTop                       |   546|
+|6     |          pwm_                        |pwm_13                       |   265|
+|7     |        pwm1                          |pwmTop_0                     |   546|
+|8     |          pwm_                        |pwm_12                       |   265|
+|9     |        pwm2                          |pwmTop_1                     |   546|
+|10    |          pwm_                        |pwm_11                       |   265|
+|11    |        pwm3                          |pwmTop_2                     |   546|
+|12    |          pwm_                        |pwm_10                       |   265|
+|13    |        pwm4                          |pwmTop_3                     |   546|
+|14    |          pwm_                        |pwm_9                        |   265|
+|15    |        pwm5                          |pwmTop_4                     |   546|
+|16    |          pwm_                        |pwm_8                        |   265|
+|17    |        pwm6                          |pwmTop_5                     |   546|
+|18    |          pwm_                        |pwm_7                        |   265|
+|19    |        pwm7                          |pwmTop_6                     |   547|
+|20    |          pwm_                        |pwm                          |   266|
++------+--------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 652.215 ; gain = 442.508
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 652.215 ; gain = 148.688
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 652.215 ; gain = 442.508
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 344 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+83 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 652.215 ; gain = 432.914
+INFO: [Common 17-1381] The checkpoint 'E:/datafiles/emilia/kitchen/modification/rev1/rev1.runs/system_multiChannelPWM_0_0_synth_1/system_multiChannelPWM_0_0.dcp' has been generated.

@@ -1,0 +1,5 @@
+11:51:19 INFO  : Registering command handlers for SDK TCF services
+11:51:21 INFO  : Launching XSCT server: xsct.bat -interactive C:\git\GIT\emiKitchenFPGA_2016.4\sdk\temp_xsdb_launch_script.tcl
+11:51:25 INFO  : XSCT server has started successfully.
+11:51:25 INFO  : Successfully done setting XSCT server connection channel  
+11:51:27 INFO  : Successfully done setting SDK workspace  

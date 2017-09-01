@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com"
+		xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<spirit:vendor>xilinx.com</spirit:vendor>
+	<spirit:library>customized_ip</spirit:library>
+	<spirit:name>system_pwmKitchen_3_0</spirit:name>
+	<spirit:version>1.0</spirit:version>
+	<spirit:busInterfaces>
+		<spirit:busInterface>
+			<spirit:name>clock</spirit:name>
+			<spirit:busType spirit:vendor="xilinx.com"
+					spirit:library="signal"
+					spirit:name="clock"
+					spirit:version="1.0"/>
+			<spirit:abstractionType spirit:vendor="xilinx.com"
+					spirit:library="signal"
+					spirit:name="clock_rtl"
+					spirit:version="1.0"/>
+			<spirit:slave/>
+			<spirit:portMaps>
+				<spirit:portMap>
+					<spirit:logicalPort>
+						<spirit:name>CLK</spirit:name>
+					</spirit:logicalPort>
+					<spirit:physicalPort>
+						<spirit:name>clock</spirit:name>
+					</spirit:physicalPort>
+				</spirit:portMap>
+			</spirit:portMaps>
+		</spirit:busInterface>
+	</spirit:busInterfaces>
+	<spirit:model>
+		<spirit:ports>
+			<spirit:port>
+				<spirit:name>clock</spirit:name>
+				<spirit:wire>
+					<spirit:direction>in</spirit:direction>
+					<spirit:wireTypeDefs>
+						<spirit:wireTypeDef>
+							<spirit:typeName>std_logic</spirit:typeName>
+							<spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+						</spirit:wireTypeDef>
+					</spirit:wireTypeDefs>
+				</spirit:wire>
+			</spirit:port>
+			<spirit:port>
+				<spirit:name>nreset</spirit:name>
+				<spirit:wire>
+					<spirit:direction>in</spirit:direction>
+					<spirit:wireTypeDefs>
+						<spirit:wireTypeDef>
+							<spirit:typeName>std_logic</spirit:typeName>
+							<spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+						</spirit:wireTypeDef>
+					</spirit:wireTypeDefs>
+				</spirit:wire>
+			</spirit:port>
+			<spirit:port>
+				<spirit:name>doorOpen</spirit:name>
+				<spirit:wire>
+					<spirit:direction>in</spirit:direction>
+					<spirit:wireTypeDefs>
+						<spirit:wireTypeDef>
+							<spirit:typeName>std_logic</spirit:typeName>
+							<spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+						</spirit:wireTypeDef>
+					</spirit:wireTypeDefs>
+				</spirit:wire>
+			</spirit:port>
+			<spirit:port>
+				<spirit:name>pwm</spirit:name>
+				<spirit:wire>
+					<spirit:direction>out</spirit:direction>
+					<spirit:wireTypeDefs>
+						<spirit:wireTypeDef>
+							<spirit:typeName>std_logic</spirit:typeName>
+							<spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+						</spirit:wireTypeDef>
+					</spirit:wireTypeDefs>
+				</spirit:wire>
+			</spirit:port>
+		</spirit:ports>
+		<spirit:modelParameters>
+			<spirit:modelParameter xsi:type="spirit:nameValueTypeType"
+					spirit:dataType="integer">
+				<spirit:name>CLOCK_RATE</spirit:name>
+				<spirit:displayName>Clock Rate</spirit:displayName>
+				<spirit:value spirit:format="bitString"
+						spirit:resolve="generated"
+						spirit:id="MODELPARAM_VALUE.CLOCK_RATE"
+						spirit:bitStringLength="27">&quot;100111101111001000011010101&quot;</spirit:value>
+			</spirit:modelParameter>
+			<spirit:modelParameter spirit:dataType="integer">
+				<spirit:name>SECOND_TIMEOUT</spirit:name>
+				<spirit:displayName>Second Timeout</spirit:displayName>
+				<spirit:value spirit:format="bitString"
+						spirit:resolve="generated"
+						spirit:id="MODELPARAM_VALUE.SECOND_TIMEOUT"
+						spirit:bitStringLength="12">0x0B4</spirit:value>
+			</spirit:modelParameter>
+			<spirit:modelParameter spirit:dataType="integer">
+				<spirit:name>REFRESH</spirit:name>
+				<spirit:displayName>Refresh</spirit:displayName>
+				<spirit:value spirit:format="bitString"
+						spirit:resolve="generated"
+						spirit:id="MODELPARAM_VALUE.REFRESH"
+						spirit:bitStringLength="32">0x00004000</spirit:value>
+			</spirit:modelParameter>
+		</spirit:modelParameters>
+	</spirit:model>
+	<spirit:description>pwmTop_v1_0</spirit:description>
+	<spirit:parameters>
+		<spirit:parameter>
+			<spirit:name>CLOCK_RATE</spirit:name>
+			<spirit:displayName>Clock Rate</spirit:displayName>
+			<spirit:value spirit:format="bitString"
+					spirit:resolve="user"
+					spirit:id="PARAM_VALUE.CLOCK_RATE"
+					spirit:bitStringLength="27">&quot;100111101111001000011010101&quot;</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
+			<spirit:name>SECOND_TIMEOUT</spirit:name>
+			<spirit:displayName>Second Timeout</spirit:displayName>
+			<spirit:value spirit:format="bitString"
+					spirit:resolve="user"
+					spirit:id="PARAM_VALUE.SECOND_TIMEOUT"
+					spirit:bitStringLength="12">0x0B4</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
+			<spirit:name>REFRESH</spirit:name>
+			<spirit:displayName>Refresh</spirit:displayName>
+			<spirit:value spirit:format="bitString"
+					spirit:resolve="user"
+					spirit:id="PARAM_VALUE.REFRESH"
+					spirit:bitStringLength="32">0x00004000</spirit:value>
+		</spirit:parameter>
+		<spirit:parameter>
+			<spirit:name>Component_Name</spirit:name>
+			<spirit:value spirit:resolve="user"
+					spirit:id="PARAM_VALUE.Component_Name"
+					spirit:order="1">system_pwmKitchen_3_0</spirit:value>
+		</spirit:parameter>
+	</spirit:parameters>
+	<spirit:vendorExtensions>
+		<xilinx:coreExtensions>
+			<xilinx:displayName>pwmTop_v1_0</xilinx:displayName>
+			<xilinx:coreRevision>3</xilinx:coreRevision>
+			<xilinx:tags>
+				<xilinx:tag xilinx:name="xilinx.com:user:pwmTop:1.0_ARCHIVE_LOCATION">e:/datafiles/emilia/kitchen/modification/pwm</xilinx:tag>
+				<xilinx:tag xilinx:name="xilinx.com:user:pwmKitchen:1.0_ARCHIVE_LOCATION">e:/datafiles/emilia/kitchen/modification/pwm</xilinx:tag>
+				<xilinx:tag xilinx:name="xilinx.com:user:pwmKitchen:1.1_ARCHIVE_LOCATION">e:/datafiles/emilia/kitchen/modification/pwm</xilinx:tag>
+			</xilinx:tags>
+		</xilinx:coreExtensions>
+		<xilinx:packagingInfo>
+			<xilinx:xilinxVersion>2016.4</xilinx:xilinxVersion>
+			<xilinx:checksum xilinx:scope="busInterfaces"
+					xilinx:value="d2f1f668"/>
+			<xilinx:checksum xilinx:scope="fileGroups"
+					xilinx:value="4d507fc6"/>
+			<xilinx:checksum xilinx:scope="ports"
+					xilinx:value="0b2759e8"/>
+			<xilinx:checksum xilinx:scope="hdlParameters"
+					xilinx:value="ba9d01a9"/>
+			<xilinx:checksum xilinx:scope="parameters"
+					xilinx:value="f2e4383f"/>
+		</xilinx:packagingInfo>
+	</spirit:vendorExtensions>
+</spirit:component>

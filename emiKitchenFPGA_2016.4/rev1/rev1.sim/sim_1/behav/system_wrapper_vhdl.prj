@@ -1,0 +1,18 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../rev1.ip_user_files/bd/system/ip/system_microblaze_0_0/sim/system_microblaze_0_0.vhd"
+vhdl xil_defaultlib  "../../../rev1.ip_user_files/bd/system/ip/system_dlmb_v10_0/sim/system_dlmb_v10_0.vhd"
+vhdl xil_defaultlib  "../../../rev1.ip_user_files/bd/system/ip/system_ilmb_v10_0/sim/system_ilmb_v10_0.vhd"
+vhdl xil_defaultlib  "../../../rev1.ip_user_files/bd/system/ip/system_dlmb_bram_if_cntlr_0/sim/system_dlmb_bram_if_cntlr_0.vhd"
+vhdl xil_defaultlib  "../../../rev1.ip_user_files/bd/system/ip/system_ilmb_bram_if_cntlr_0/sim/system_ilmb_bram_if_cntlr_0.vhd"
+vhdl xil_defaultlib  "../../../rev1.ip_user_files/bd/system/ip/system_microblaze_0_axi_intc_0/sim/system_microblaze_0_axi_intc_0.vhd"
+vhdl xil_defaultlib  "../../../rev1.ip_user_files/bd/system/ip/system_mdm_1_0/sim/system_mdm_1_0.vhd"
+vhdl xil_defaultlib  "../../../rev1.ip_user_files/bd/system/ip/system_rst_mig_7series_0_83M_0/sim/system_rst_mig_7series_0_83M_0.vhd"
+vhdl xil_defaultlib  "../../../rev1.ip_user_files/bd/system/ip/system_axi_uartlite_0_0/sim/system_axi_uartlite_0_0.vhd"
+vhdl xil_defaultlib  "../../../rev1.ip_user_files/bd/system/ip/system_axi_ethernetlite_0_0/sim/system_axi_ethernetlite_0_0.vhd"
+vhdl xil_defaultlib  "../../../rev1.ip_user_files/bd/system/ip/system_axi_timer_0_0/sim/system_axi_timer_0_0.vhd"
+vhdl xil_defaultlib  "../../../rev1.ip_user_files/bd/system/ip/system_axi_timer_1_0/sim/system_axi_timer_1_0.vhd"
+vhdl xil_defaultlib  "../../../rev1.ip_user_files/bd/system/ip/system_axi_gpio_0_0/sim/system_axi_gpio_0_0.vhd"
+vhdl xil_defaultlib  "../../../rev1.ip_user_files/bd/system/ip/system_axi_gpio_1_0/sim/system_axi_gpio_1_0.vhd"
+
+# Do not sort compile order
+nosort

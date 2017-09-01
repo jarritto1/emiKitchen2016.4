@@ -1,0 +1,112 @@
+
+*** Running vivado
+    with args -log system_microblaze_0_axi_intc_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_microblaze_0_axi_intc_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source system_microblaze_0_axi_intc_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 289.430 ; gain = 79.199
+INFO: [Synth 8-638] synthesizing module 'system_microblaze_0_axi_intc_0' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ip/system_microblaze_0_axi_intc_0/synth/system_microblaze_0_axi_intc_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'axi_intc' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/a811/hdl/axi_intc_v4_1_vh_rfs.vhd:3769]
+INFO: [Synth 8-638] synthesizing module 'intc_core' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/a811/hdl/axi_intc_v4_1_vh_rfs.vhd:782]
+INFO: [Synth 8-638] synthesizing module 'shared_ram_ivar' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/a811/hdl/axi_intc_v4_1_vh_rfs.vhd:321]
+INFO: [Synth 8-256] done synthesizing module 'shared_ram_ivar' (1#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/a811/hdl/axi_intc_v4_1_vh_rfs.vhd:321]
+INFO: [Synth 8-256] done synthesizing module 'intc_core' (2#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/a811/hdl/axi_intc_v4_1_vh_rfs.vhd:782]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized11' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized11' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized12' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized12' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized13' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized13' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized14' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized14' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized15' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized15' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized16' [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized16' (3#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (4#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (5#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (6#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_intc' (7#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ipshared/a811/hdl/axi_intc_v4_1_vh_rfs.vhd:3769]
+INFO: [Synth 8-256] done synthesizing module 'system_microblaze_0_axi_intc_0' (8#1) [e:/datafiles/emilia/kitchen/modification/rev1/rev1.srcs/sources_1/bd/system/ip/system_microblaze_0_axi_intc_0/synth/system_microblaze_0_axi_intc_0.vhd:89]
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 328.742 ; gain = 118.512
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 328.742 ; gain = 118.512
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 622.496 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 622.496 ; gain = 412.266
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 622.496 ; gain = 412.266
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 622.496 ; gain = 412.266
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 622.496 ; gain = 412.266
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 622.496 ; gain = 412.266
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------------------------------------------------------------------+----------------+----------------------+-----------------+
+|Module Name | RTL Object                                                                     | Inference      | Size (Depth x Width) | Primitives      | 
++------------+--------------------------------------------------------------------------------+----------------+----------------------+-----------------+
+|axi_intc    | INTC_CORE_I/IVAR_FAST_MODE_GEN.IVAR_REG_MEM_AXI_CLK_GEN.IVAR_REG_MEM_I/ram_reg | User Attribute | 16 x 32              | RAM16X1D x 32   | 
++------------+--------------------------------------------------------------------------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 622.496 ; gain = 412.266
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 622.496 ; gain = 412.266
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 622.496 ; gain = 412.266
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 622.496 ; gain = 412.266
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 622.496 ; gain = 412.266
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 622.496 ; gain = 412.266
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 622.496 ; gain = 412.266
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 622.496 ; gain = 412.266
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 622.496 ; gain = 412.266
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     2|
+|2     |LUT2     |    18|
+|3     |LUT3     |    42|
+|4     |LUT4     |    29|
+|5     |LUT5     |    29|
+|6     |LUT6     |    38|
+|7     |RAM16X1D |    32|
+|8     |FDRE     |   183|
+|9     |FDSE     |     1|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 622.496 ; gain = 412.266
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 622.496 ; gain = 411.027

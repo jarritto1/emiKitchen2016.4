@@ -1,0 +1,124 @@
+
+*** Running vivado
+    with args -log system_xadc_wiz_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_xadc_wiz_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source system_xadc_wiz_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 310.445 ; gain = 100.168
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/system_xadc_wiz_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_axi_xadc' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/system_xadc_wiz_0_0_axi_xadc.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_axi_lite_ipif' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_wiz_0_0_axi_lite_ipif.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_slave_attachment' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_wiz_0_0_slave_attachment.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_address_decoder' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_wiz_0_0_address_decoder.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized0' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized0' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized1' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized1' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized2' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized2' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized3' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized3' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized4' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized4' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized5' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized5' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized6' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized6' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized7' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized7' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized8' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized8' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized9' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized9' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized10' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized10' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized11' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized11' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized12' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized12' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized13' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized13' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized14' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized14' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized15' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized15' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized16' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized16' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized17' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized17' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized18' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized18' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized19' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized19' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized20' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized20' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized21' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized21' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized22' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized22' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized23' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized23' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized24' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized24' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized25' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_pselect_f__parameterized25' (1#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_pselect_f.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_address_decoder' (2#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_wiz_0_0_address_decoder.vhd:176]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_slave_attachment' (3#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_wiz_0_0_slave_attachment.vhd:227]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_axi_lite_ipif' (4#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/axi_lite_ipif_v1_01_a/hdl/src/vhdl/system_xadc_wiz_0_0_axi_lite_ipif.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_xadc_core_drp' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/system_xadc_wiz_0_0_xadc_core_drp.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'temperature_update' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/system_xadc_wiz_0_0_temperature_update.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'temperature_update' (5#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/system_xadc_wiz_0_0_temperature_update.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'drp_arbiter' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/system_xadc_wiz_0_0_drp_arbiter.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'drp_arbiter' (6#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/system_xadc_wiz_0_0_drp_arbiter.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_xadc_core_drp' (7#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/system_xadc_wiz_0_0_xadc_core_drp.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_soft_reset' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_soft_reset.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_soft_reset' (8#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/proc_common_v3_30_a/hdl/src/vhdl/system_xadc_wiz_0_0_soft_reset.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'system_xadc_wiz_0_0_interrupt_control' [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/interrupt_control_v2_01_a/hdl/src/vhdl/system_xadc_wiz_0_0_interrupt_control.vhd:240]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_interrupt_control' (9#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/interrupt_control_v2_01_a/hdl/src/vhdl/system_xadc_wiz_0_0_interrupt_control.vhd:240]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0_axi_xadc' (10#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/system_xadc_wiz_0_0_axi_xadc.vhd:246]
+INFO: [Synth 8-256] done synthesizing module 'system_xadc_wiz_0_0' (11#1) [c:/git/GIT/emiKitchenFPGA_2016.4/rev1/rev1.srcs/sources_1/bd/system/ip/system_xadc_wiz_0_0_3/system_xadc_wiz_0_0.v:53]
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 383.477 ; gain = 173.199
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 383.477 ; gain = 173.199
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 646.875 ; gain = 0.027
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 646.875 ; gain = 436.598
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 646.875 ; gain = 436.598
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 646.875 ; gain = 436.598
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:36 . Memory (MB): peak = 646.875 ; gain = 436.598
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 646.875 ; gain = 436.598
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:49 . Memory (MB): peak = 646.875 ; gain = 436.598
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:50 . Memory (MB): peak = 651.129 ; gain = 440.852
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:50 . Memory (MB): peak = 651.129 ; gain = 440.852
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 651.129 ; gain = 440.852
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 651.129 ; gain = 440.852
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 651.129 ; gain = 440.852
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 651.129 ; gain = 440.852
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 651.129 ; gain = 440.852
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 651.129 ; gain = 440.852
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     4|
+|2     |LUT1   |     2|
+|3     |LUT2   |    82|
+|4     |LUT3   |    32|
+|5     |LUT4   |    44|
+|6     |LUT5   |    80|
+|7     |LUT6   |   113|
+|8     |XADC   |     1|
+|9     |FDCE   |   115|
+|10    |FDPE   |     1|
+|11    |FDRE   |   215|
+|12    |FDSE   |    36|
++------+-------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 651.129 ; gain = 440.852
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 651.129 ; gain = 423.129
